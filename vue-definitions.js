@@ -384,7 +384,7 @@ let app = new Vue({
     pullData(selectedData) {
 
       if (selectedData == 'Confirmed Cases') {
-       Plotly.d3.csv("https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv", this.processData);
+       Plotly.d3.csv("ny_data/ny_cases_by_day.csv", this.processData);
       } else if (selectedData == 'Reported Deaths') {
        Plotly.d3.csv("https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv", this.processData);
       }
